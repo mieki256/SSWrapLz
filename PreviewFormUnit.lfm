@@ -1,0 +1,44 @@
+object PreviewForm: TPreviewForm
+  Left = 358
+  Height = 112
+  Top = 250
+  Width = 152
+  BorderStyle = bsNone
+  Caption = 'Preview Form'
+  ClientHeight = 112
+  ClientWidth = 152
+  Color = 11897484
+  KeyPreview = True
+  LCLVersion = '4.4.0.0'
+  OnCreate = FormCreate
+  OnHide = FormHide
+  OnKeyDown = FormKeyDown
+  OnShow = FormShow
+  object Label1: TLabel
+    Left = 8
+    Height = 21
+    Top = 8
+    Width = 75
+    Alignment = taCenter
+    Caption = 'SSWrapLz'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -16
+    Font.Name = 'Segoe UI'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Image1: TImage
+    Left = 0
+    Height = 112
+    Top = 0
+    Width = 152
+    Align = alClient
+  end
+  object Timer1: TTimer
+    OnTimer = Timer1Timer
+    Left = 8
+    Top = 48
+  end
+end

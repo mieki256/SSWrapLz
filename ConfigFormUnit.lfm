@@ -1,0 +1,298 @@
+object ConfigForm: TConfigForm
+  Left = 358
+  Height = 420
+  Top = 250
+  Width = 580
+  Caption = 'Settings'
+  ClientHeight = 420
+  ClientWidth = 580
+  Constraints.MinHeight = 420
+  Constraints.MinWidth = 580
+  LCLVersion = '4.4.0.0'
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  object LabelAppName: TLabel
+    Left = 16
+    Height = 45
+    Top = 16
+    Width = 149
+    Caption = 'SSWrapLz'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -32
+    Font.Name = 'Segoe UI'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object LabelAppVer: TLabel
+    Left = 509
+    Height = 15
+    Top = 16
+    Width = 54
+    Anchors = [akTop, akRight]
+    Caption = 'ver. 1.0.0.0'
+  end
+  object ButtonClose: TButton
+    Left = 488
+    Height = 25
+    Top = 379
+    Width = 75
+    Anchors = [akRight, akBottom]
+    Caption = 'Close'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -16
+    Font.Name = 'Segoe UI'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 0
+    OnClick = ButtonCloseClick
+  end
+  object ListBox1: TListBox
+    Left = 16
+    Height = 321
+    Top = 72
+    Width = 200
+    Anchors = [akTop, akLeft, akBottom]
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -16
+    Font.Name = 'Segoe UI'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ItemHeight = 0
+    ParentFont = False
+    TabOrder = 1
+    OnClick = ListBox1Click
+  end
+  object Label1: TLabel
+    Left = 232
+    Height = 21
+    Top = 72
+    Width = 42
+    Caption = 'Name'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -16
+    Font.Name = 'Segoe UI'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+  end
+  object Label2: TLabel
+    Left = 232
+    Height = 21
+    Top = 134
+    Width = 59
+    Caption = 'File path'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -16
+    Font.Name = 'Segoe UI'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+  end
+  object Label3: TLabel
+    Left = 232
+    Height = 21
+    Top = 196
+    Width = 77
+    Caption = 'Arguments'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -16
+    Font.Name = 'Segoe UI'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+  end
+  object Label4: TLabel
+    Left = 232
+    Height = 21
+    Top = 258
+    Width = 177
+    Caption = 'Preview .BMP (152 x 112)'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -16
+    Font.Name = 'Segoe UI'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+  end
+  object EditName: TEdit
+    Left = 232
+    Height = 23
+    Top = 102
+    Width = 211
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -12
+    Font.Name = 'Segoe UI'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 2
+  end
+  object EditPath: TEdit
+    Left = 232
+    Height = 23
+    Top = 168
+    Width = 289
+    Anchors = [akTop, akLeft, akRight]
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -12
+    Font.Name = 'Segoe UI'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 3
+  end
+  object EditArgs: TEdit
+    Left = 232
+    Height = 23
+    Top = 226
+    Width = 289
+    Anchors = [akTop, akLeft, akRight]
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -12
+    Font.Name = 'Segoe UI'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 5
+  end
+  object EditPreview: TEdit
+    Left = 232
+    Height = 23
+    Top = 288
+    Width = 289
+    Anchors = [akTop, akLeft, akRight]
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -12
+    Font.Name = 'Segoe UI'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 7
+  end
+  object ButtonAddItem: TButton
+    Left = 232
+    Height = 25
+    Top = 328
+    Width = 75
+    Caption = 'Add'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -16
+    Font.Name = 'Segoe UI'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 9
+    OnClick = ButtonAddItemClick
+  end
+  object ButtonDeleteItem: TButton
+    Left = 312
+    Height = 25
+    Top = 328
+    Width = 75
+    Caption = 'Delete'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -16
+    Font.Name = 'Segoe UI'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 10
+    OnClick = ButtonDeleteItemClick
+  end
+  object ButtonUpdateItem: TButton
+    Left = 392
+    Height = 25
+    Top = 328
+    Width = 75
+    Caption = 'Update'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -16
+    Font.Name = 'Segoe UI'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 11
+    OnClick = ButtonUpdateItemClick
+  end
+  object ButtonSaveData: TButton
+    Left = 401
+    Height = 25
+    Top = 379
+    Width = 75
+    Anchors = [akRight, akBottom]
+    Caption = 'Save'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -16
+    Font.Name = 'Segoe UI'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 13
+    OnClick = ButtonSaveDataClick
+  end
+  object ButtonSelPath: TButton
+    Left = 528
+    Height = 25
+    Top = 168
+    Width = 35
+    Anchors = [akTop, akRight]
+    Caption = '...'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -12
+    Font.Name = 'Segoe UI'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 4
+    OnClick = ButtonSelPathClick
+  end
+  object ButtonSelArgs: TButton
+    Left = 528
+    Height = 25
+    Top = 226
+    Width = 35
+    Anchors = [akTop, akRight]
+    Caption = '...'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -12
+    Font.Name = 'Segoe UI'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 6
+    OnClick = ButtonSelArgsClick
+  end
+  object ButtonSelPreview: TButton
+    Left = 528
+    Height = 25
+    Top = 288
+    Width = 35
+    Anchors = [akTop, akRight]
+    Caption = '...'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -12
+    Font.Name = 'Segoe UI'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 8
+    OnClick = ButtonSelPreviewClick
+  end
+  object ButtonOpenCfgDir: TButton
+    Left = 232
+    Height = 25
+    Top = 368
+    Width = 126
+    AutoSize = True
+    Caption = 'Open config folder'
+    TabOrder = 12
+    OnClick = ButtonOpenCfgDirClick
+  end
+  object OpenDialog1: TOpenDialog
+    Left = 520
+    Top = 328
+  end
+end

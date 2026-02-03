@@ -1,0 +1,43 @@
+object FullScreenForm: TFullScreenForm
+  Left = 358
+  Height = 600
+  Top = 250
+  Width = 800
+  BorderStyle = bsNone
+  Caption = 'SSWrapLz Fullscreen mode'
+  ClientHeight = 600
+  ClientWidth = 800
+  Color = clBlack
+  FormStyle = fsStayOnTop
+  KeyPreview = True
+  LCLVersion = '4.4.0.0'
+  WindowState = wsFullScreen
+  OnClick = FormClick
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  OnKeyDown = FormKeyDown
+  OnMouseDown = FormMouseDown
+  OnMouseMove = FormMouseMove
+  OnShow = FormShow
+  object Label1: TLabel
+    Left = 24
+    Height = 96
+    Top = 24
+    Width = 245
+    Alignment = taCenter
+    Caption = 'SSWrapLz'#13#10'ScreenSaver Wrapper'#13#10'made with Lazarus'
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clWhite
+    Font.Height = -24
+    Font.Name = 'Segoe UI'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Timer1: TTimer
+    OnTimer = Timer1Timer
+    Left = 24
+    Top = 184
+  end
+end
