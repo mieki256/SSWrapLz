@@ -1,6 +1,7 @@
 # Lazarus compiler-generated binaries (safe to delete)
-*.scr
-*.exe
+# *.scr
+/*.exe
+
 *.dll
 *.so
 *.dylib
